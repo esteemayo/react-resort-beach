@@ -1,13 +1,13 @@
 const links = [
   {
     id: 1,
-    url: "/",
-    text: "Home",
+    url: '/',
+    text: 'Home',
   },
   {
     id: 2,
-    url: "/rooms",
-    text: "Rooms",
+    url: '/rooms',
+    text: 'Rooms',
   },
 ];
 

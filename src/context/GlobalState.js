@@ -1,6 +1,5 @@
-import { Component, useContext, createContext } from "react";
-
-import Client from "../Contentful";
+import { Component, useContext, createContext } from 'react';
+import Client from '../Contentful';
 
 const AppContext = createContext();
 
@@ -10,7 +9,7 @@ class AppProvider extends Component {
     sortedRooms: [],
     featuredRooms: [],
     loading: true,
-    type: "all",
+    type: 'all',
     capacity: 1,
     price: 0,
     minPrice: 0,
@@ -25,8 +24,8 @@ class AppProvider extends Component {
   getData = async () => {
     try {
       const res = await Client.getEntries({
-        content_type: "beachResortRoom",
-        order: "sys.createdAt",
+        content_type: 'beachResortRoom',
+        order: 'sys.createdAt',
       });
 
       const rooms = this.formatData(res.items);
@@ -71,7 +70,7 @@ class AppProvider extends Component {
 
   handleChange = (e) => {
     const target = e.target;
-    const value = target.type === "checkbox" ? target.checked : target.value;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = e.target.name;
 
     this.setState({ [name]: value }, this.filterRooms);
@@ -88,7 +87,7 @@ class AppProvider extends Component {
     price = parseInt(price);
 
     // Filter by type
-    if (type !== "all") {
+    if (type !== 'all') {
       tempRooms = tempRooms.filter((room) => room.type === type);
     }
 
@@ -138,4 +137,4 @@ export const useGlobalContext = () => {
   return useContext(AppContext);
 };
 
-export { AppContext, AppProvider };
+export { AppProvider };

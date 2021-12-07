@@ -1,7 +1,7 @@
-import { Component } from "react";
+import { Component } from 'react';
 
-import data from "../services/services";
-import Title from "./Title";
+import data from 'services/services';
+import Title from './Title';
 
 class Services extends Component {
   state = {
@@ -12,13 +12,13 @@ class Services extends Component {
     const { services } = this.state;
 
     return (
-      <section className="services">
-        <Title title="Services" />
-        <div className="services-center">
+      <section className='services'>
+        <Title title='Services' />
+        <div className='services-center'>
           {services.map((item, index) => {
             const { icon, info, title } = item;
             return (
-              <article key={index} className="service">
+              <article key={index} className='service'>
                 <span>{icon}</span>
                 <h6>{title}</h6>
                 <p>{info}</p>

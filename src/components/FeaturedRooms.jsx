@@ -1,7 +1,7 @@
-import { useGlobalContext } from "./../context/GlobalState";
-import Loading from "./Loading";
-import Title from "./Title";
-import Room from "./Room";
+import { useGlobalContext } from 'context/GlobalState';
+import Loading from './Loading';
+import Title from './Title';
+import Room from './Room';
 
 const FeaturedRooms = () => {
   const { featuredRooms: rooms, loading } = useGlobalContext();
@@ -11,9 +11,9 @@ const FeaturedRooms = () => {
   }
 
   return (
-    <section className="featured-rooms">
-      <Title title="Featured rooms" />
-      <div className="featured-rooms-center">
+    <section className='featured-rooms'>
+      <Title title='Featured rooms' />
+      <div className='featured-rooms-center'>
         {rooms.map((room) => {
           return <Room key={room.id} {...room} />;
         })}
