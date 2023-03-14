@@ -1,6 +1,6 @@
 import RoomFilter from './RoomFilter';
 import Loading from './Loading';
-import { useGlobalContext } from 'context/GlobalState';
+import { useGlobalContext } from 'context/RoomContext';
 import RoomList from './RoomList';
 
 const RoomContainer = () => {
