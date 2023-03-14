@@ -1,3 +1,4 @@
+import Title from './Title';
 import data from 'services/services';
 
 const Services = () => {
