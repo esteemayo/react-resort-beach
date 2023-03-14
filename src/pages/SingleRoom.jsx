@@ -1,5 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 
+import StyledHero from 'components/StyledHero';
+import Banner from 'components/Banner';
 import { useGlobalContext } from 'context/GlobalState';
 import StyledHero from 'components/StyledHero';
 import defaultBcg from 'images/room-1.jpeg';
