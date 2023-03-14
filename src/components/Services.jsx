@@ -1,5 +1,3 @@
-import { Component } from 'react';
-
 import data from 'services/services';
 import Title from './Title';
 
