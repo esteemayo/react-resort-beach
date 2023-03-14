@@ -1,3 +1,4 @@
+import Title from './Title';
 import { useGlobalContext } from 'context/GlobalState';
 
 const getUnique = (items, value) => {
