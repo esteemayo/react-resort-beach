@@ -5,7 +5,6 @@ import Banner from 'components/Banner';
 import { useGlobalContext } from 'context/GlobalState';
 import StyledHero from 'components/StyledHero';
 import defaultBcg from 'images/room-1.jpeg';
-import Banner from 'components/Banner';
 
 const SingleRoom = () => {
   const { slug } = useParams();
