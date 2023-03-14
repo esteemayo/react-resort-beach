@@ -1,5 +1,4 @@
 import { useGlobalContext } from 'context/GlobalState';
-import Title from './Title';
 
 const getUnique = (items, value) => {
   return [...new Set(items.map((item) => item[value]))];
