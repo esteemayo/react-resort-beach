@@ -134,7 +134,7 @@ class RoomProvider extends Component {
 }
 
 export const useGlobalContext = () => {
-  return useContext(AppContext);
+  return useContext(RoomContext);
 };
 
 export { RoomProvider };
