@@ -3,7 +3,7 @@ import Client from '../../Contentful';
 
 const AppContext = createContext();
 
-class AppProvider extends Component {
+class RoomProvider extends Component {
   state = {
     rooms: [],
     sortedRooms: [],
@@ -137,4 +137,4 @@ export const useGlobalContext = () => {
   return useContext(AppContext);
 };
 
-export { AppProvider };
+export { RoomProvider };
