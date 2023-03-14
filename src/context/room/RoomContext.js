@@ -137,4 +137,4 @@ export const useGlobalContext = () => {
   return useContext(RoomContext);
 };
 
-export { RoomProvider };
+export default RoomProvider;
