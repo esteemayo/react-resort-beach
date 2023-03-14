@@ -120,7 +120,7 @@ class RoomProvider extends Component {
 
   render() {
     return (
-      <AppContext.Provider
+      <RoomContext.Provider
         value={{
           ...this.state,
           getRoom: this.getRoom,
