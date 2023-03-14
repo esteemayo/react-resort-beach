@@ -1,4 +1,4 @@
-import { useGlobalContext } from 'context/RoomContext';
+import { useGlobalContext } from 'context/room/RoomContext';
 import Loading from './Loading';
 import Title from './Title';
 import Room from './Room';
