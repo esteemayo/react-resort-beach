@@ -1,7 +1,7 @@
 import { Component, useContext, createContext } from 'react';
 import Client from '../../Contentful';
 
-const AppContext = createContext();
+const RoomContext = createContext();
 
 class RoomProvider extends Component {
   state = {
