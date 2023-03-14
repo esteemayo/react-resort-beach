@@ -1,5 +1,4 @@
 import { useGlobalContext } from 'context/GlobalState';
-import RoomFilter from './RoomFilter';
 import RoomList from './RoomList';
 import Loading from './Loading';
 
