@@ -1,6 +1,7 @@
 import Title from './Title';
 import Loading from './Loading';
 import Room from './Room';
+import { useGlobalContext } from 'context/room/RoomContext';
 
 const FeaturedRooms = () => {
   const { featuredRooms: rooms, loading } = useGlobalContext();
