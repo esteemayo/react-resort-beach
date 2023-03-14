@@ -1,5 +1,5 @@
 import Title from './Title';
-import { useGlobalContext } from 'context/RoomContext';
+import { useGlobalContext } from 'context/room/RoomContext';
 
 const getUnique = (items, value) => {
   return [...new Set(items.map((item) => item[value]))];
