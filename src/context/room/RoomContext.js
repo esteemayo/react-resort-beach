@@ -128,7 +128,7 @@ class RoomProvider extends Component {
         }}
       >
         {this.props.children}
-      </AppContext.Provider>
+      </RoomContext.Provider>
     );
   }
 }
